@@ -1,112 +1,188 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #cb83b7;
+    color: #333;
 }
 
-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-#products {
-    flex: 3;
-}
-
-.product {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-
-.add-to-cart {
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.add-to-cart:hover {
-    background-color: #0056b3;
-}
-
-#cart {
-    flex: 1;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f8f9fa;
-}
-
-#cart-items {
-    list-style: none;
-    padding: 0;
-}
-
-#cart-items li {
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-#checkout {
-    background-color: #28a745;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-    margin-top: 10px;
-}
-
-#checkout:hover {
-    background-color: #218838;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-content {
-    max-width: 1200px;
+.container {
+    width: 80%;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
-.footer-nav a {
-    color: #fff;
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 1.1em;
 }
 
-.footer-nav a:hover {
+.nav-menu a:hover {
     text-decoration: underline;
+}
+
+
+.hero-section {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #4c7b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4f41;
+}
+
+
+.features-section {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.feature-card p {
+    font-size: 1.1em;
+}
+
+
+.about-section {
+    padding: 80px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.contact-section {
+    padding: 100px 20px;
+    background-color: #aeb689;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.hero-section {
+    background: url('https://your-image-url.com/new-hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+
+.features-section {
+    background: url('https://your-image-url.com/new-features-background.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
